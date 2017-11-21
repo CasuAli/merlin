@@ -25,19 +25,23 @@ public class CartCheckoutTest {
 	private WebDriver driver; //web browser driver
 	private String baseUrl; //address of our tested site ; 
 	
-	@SuppressWarnings("rawtypes")
+	@SuppressWarnings("rawtypes") //to get rid off a warning
 	@Parameters
 	public static Collection getBrowser(){
 		return Arrays.asList(new Object[][] {{"Chrome"},{"Firefox"}});
 	}
 	
+	//constructor responsible for switching browsers to do each test twice
 	public CartCheckoutTest(String browser){
 		this.sBrowser = browser;
 	}
 	
 	@Before
 	public void Setup() {
+		
 		System.out.println("Browser:"+ sBrowser);
+		
+		//checks which browser should be run
 		if(sBrowser.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", "browsers//geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -74,7 +78,7 @@ public class CartCheckoutTest {
 		assertTrue("Page address wasn't correct", driver.getCurrentUrl().contains("checkout/"));
 	}
 		
-	//to be done after all test methods
+	//to be done after all tests
 	@After
 	public void tearDown() {
 		

@@ -28,19 +28,23 @@ public class CartBookmarkTest {
 	private WebElement bookmarkAdd;
 	private WebElement bookmarkIs;
 	
-	@SuppressWarnings("rawtypes")
+	@SuppressWarnings("rawtypes") //to get rid off a warning
 	@Parameters
 	public static Collection getBrowser(){
 		return Arrays.asList(new Object[][] {{"Chrome"},{"Firefox"}});
 	}
 	
+	//constructor responsible for switching browsers to do each test twice
 	public CartBookmarkTest(String browser){
 		this.sBrowser = browser;
 	}
 	
 	@Before
 	public void Setup() {
+		
 		System.out.println("Browser:"+ sBrowser);
+		
+		//checks which browser should be run
 		if(sBrowser.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", "browsers//geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -69,19 +73,19 @@ public class CartBookmarkTest {
 		
 		Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		//checks if there is an option to bookmark product (add to a clipboard) and clicks it
+		//checks if there is an option to add a bookmark to a product and clicks it
 		bookmarkAdd = driver.findElement(By.partialLinkText("Dodaj do schowka"));
 		assertTrue("Element wasn't enabled (Dodaj do schowka)", bookmarkAdd.isDisplayed());
 		bookmarkAdd.click();
 		
 		//Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		//checks if product was added
+		//checks if the product was added
 		bookmarkIs = driver.findElement(By.partialLinkText("Produkt zosta³ dodany do schowka"));
 		assertTrue("Element wasn't enabled (Produkt zosta³ dodany do schowka", bookmarkIs.isDisplayed());
 				
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//click an option to remove product from a clipboard
+		//click an option to remove a bookmark
 		bookmarkIs.click();
 			
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -89,7 +93,7 @@ public class CartBookmarkTest {
 		assertTrue("Element wasn't enabled (Dodaj do schowka)", bookmarkAdd.isDisplayed());
 	}
 		
-	//to be done after all test methods
+	//to be done after a test
 	@After
 	public void tearDown() {
 		

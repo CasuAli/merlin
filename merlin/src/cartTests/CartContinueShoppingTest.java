@@ -24,19 +24,23 @@ public class CartContinueShoppingTest {
 	private WebDriver driver; //web browser driver
 	private String baseUrl; //address of our tested site ; 
 	
-	@SuppressWarnings("rawtypes")
+	@SuppressWarnings("rawtypes") //to get rid off a warning
 	@Parameters
 	public static Collection getBrowser(){
 		return Arrays.asList(new Object[][] {{"Chrome"},{"Firefox"}});
 	}
 	
+	//constructor responsible for switching browsers to do each test twice
 	public CartContinueShoppingTest(String browser){
 		this.sBrowser = browser;
 	}
 	
 	@Before
 	public void Setup() {
+		
 		System.out.println("Browser:"+ sBrowser);
+		
+		//checks which browser should be run
 		if(sBrowser.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", "browsers//geckodriver.exe");
 			driver = new FirefoxDriver();

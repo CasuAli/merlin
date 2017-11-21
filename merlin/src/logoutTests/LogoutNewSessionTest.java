@@ -24,7 +24,10 @@ public class LogoutNewSessionTest {
 	
 	private static String sBrowser;
 	private static WebDriver driver; //web browser driver
-	private static String baseUrl; //address of our tested site 
+	private static String baseUrl; //address of our tested site
+	private String userNameT = "a-melia@wp.pl";
+	private String userPassT = "haslo123";
+	
 	@SuppressWarnings("rawtypes")
 	@Parameters
 	public static Collection getBrowser(){
@@ -36,7 +39,7 @@ public class LogoutNewSessionTest {
 	}
 	   
 	@Before
-	public void classSetup() {
+	public void classSetup() throws Exception {
 		System.out.println("Browser:"+ sBrowser);
 		if(sBrowser.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", "browsers//geckodriver.exe");
@@ -53,11 +56,32 @@ public class LogoutNewSessionTest {
 		
 		//closes a notice that's messing
 		driver.findElement(By.xpath("//button[@class='merlin-legal-note__close']")).click();
+	
+		//searches for the hyperlink and clicks it
+		driver.findElement(By.partialLinkText("ZALOGUJ")).click();
+				
+		//using developers tool in the browser we can get a name of the element (field's name)
+		WebElement loginName = driver.findElement(By.id("login_login"));
+		//clears the username field
+		loginName.clear();
+		//uses input from a variable (valid username)
+		loginName.sendKeys(userNameT);
+				
+		//searches for element by its it (developers tool in the browser)
+		WebElement loginPass = driver.findElement(By.id("login_password"));
+		loginPass.clear();
+		//uses input from a variable (valid password)
+		loginPass.sendKeys(userPassT);
+				
+		//searches for a button "log in" (type input, value from tool) and clicks it
+		driver.findElement(By.xpath("//button[@class='button button--large button--secondary auth-button']")).click();
+		
+		Thread.sleep(2000);
 	}
 	
 	@Test
 	public void testSuccessfulLogout() throws Exception {
-			
+		
 		//closes current session
 		driver.quit();
 		

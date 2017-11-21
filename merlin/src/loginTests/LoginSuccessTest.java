@@ -63,7 +63,6 @@ public class LoginSuccessTest {
 		//searches for the hyperlink and clicks it
 		driver.findElement(By.partialLinkText("ZALOGUJ")).click();
 		
-		//to save some time it's better to put in in a variable
 		//using developers tool in the browser we can get a name of the element (field's name)
 		WebElement loginName = driver.findElement(By.id("login_login"));
 		//clears the username field
@@ -77,19 +76,12 @@ public class LoginSuccessTest {
 		//uses input from a variable (valid password)
 		loginPass.sendKeys(userPassT);
 		
-		//searches for a button (type input, value from tool) and clicks it
+		//searches for a button "log in" (type input, value from tool) and clicks it
 		driver.findElement(By.xpath("//button[@class='button button--large button--secondary auth-button']")).click();
-	
-		//tests if we get an error trying to login with wrong login or password
-		//when Internet connection is bad, it waits 3 seconds for a page to load
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		//checks if the message about login was correct
-		//String logSuccess = driver.findElement(By.xpath("//p[@class='g-popup__content-text']")).getText();
-		//assertEquals("Message was incorrect", "Jesteœ zalogowany ..", logSuccess);
 		
 		//waits amount of time until throwing exception
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//checks if it's logged
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		//checks if user is logged
 		WebElement account = driver.findElement(By.partialLinkText("KONTO"));
 		assertTrue(account.isEnabled());
 	}
