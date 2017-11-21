@@ -1,0 +1,294 @@
+#Author: Aleksandra Torbe'
+Feature: Login
+  Description: Testing Login functionalities
+
+  Scenario Outline: (ID: Login-1) Successful login with a valid credentials # Login.feature:5
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    When User clicks the CZESC ZALOGUJ SIE hyperlink
+    And User enters valid E-mail and valid password in a popup window
+    And User clicks the Zaloguj sie button
+    Then Message Jestes zalogowany is displayed in a popup window
+    And TWOJE KONTO feature is enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-1) Successful login with a valid credentials # Login.feature:16
+    Given The "Chrome" is turned on                                         # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                        # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and valid password in a popup window       # LoginSuccessSteps.user_enters_valid()
+    And User clicks the Zaloguj sie button                                  # _LoginCommonSteps.user_clicks_button()
+    Then Message Jestes zalogowany is displayed in a popup window           # LoginSuccessSteps.message_displayed_success()
+    And TWOJE KONTO feature is enabled                                      # LoginSuccessSteps.KONTO_feature_is_enabled()
+    And Browser can be turned off                                           # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-1) Successful login with a valid credentials # Login.feature:17
+    Given The "Firefox" is turned on                                        # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                        # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and valid password in a popup window       # LoginSuccessSteps.user_enters_valid()
+    And User clicks the Zaloguj sie button                                  # _LoginCommonSteps.user_clicks_button()
+    Then Message Jestes zalogowany is displayed in a popup window           # LoginSuccessSteps.message_displayed_success()
+    And TWOJE KONTO feature is enabled                                      # LoginSuccessSteps.KONTO_feature_is_enabled()
+    And Browser can be turned off                                           # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-2) Unsuccessful login with an invalid E-mail address format and a valid password # Login.feature:19
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    When User clicks the CZESC ZALOGUJ SIE hyperlink
+    And User enters invalid E-mail format and valid password in a popup window
+    And User clicks the Zaloguj sie button
+    Then Message Wprowadzono bledne dane is displayed in a popup window
+    And TWOJE KONTO feature is not enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-2) Unsuccessful login with an invalid E-mail address format and a valid password # Login.feature:30
+    Given The "Chrome" is turned on                                                                             # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                    # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                                            # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters invalid E-mail format and valid password in a popup window                                  # LoginWrongEmailFormatSteps.user_enters_invalid_email()
+    And User clicks the Zaloguj sie button                                                                      # _LoginCommonSteps.user_clicks_button()
+    Then Message Wprowadzono bledne dane is displayed in a popup window                                         # LoginWrongEmailFormatSteps.message_displayed_invalid_email()
+    And TWOJE KONTO feature is not enabled                                                                      # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                               # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-2) Unsuccessful login with an invalid E-mail address format and a valid password # Login.feature:31
+    Given The "Firefox" is turned on                                                                            # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                    # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                                            # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters invalid E-mail format and valid password in a popup window                                  # LoginWrongEmailFormatSteps.user_enters_invalid_email()
+    And User clicks the Zaloguj sie button                                                                      # _LoginCommonSteps.user_clicks_button()
+    Then Message Wprowadzono bledne dane is displayed in a popup window                                         # LoginWrongEmailFormatSteps.message_displayed_invalid_email()
+    And TWOJE KONTO feature is not enabled                                                                      # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                               # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-3) Unsuccessful login with a valid E-mail address and an invalid password # Login.feature:33
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    When User clicks the CZESC ZALOGUJ SIE hyperlink
+    And User enters valid E-mail and invalid password in a popup window
+    And User clicks the Zaloguj sie button
+    Then Message Taki uzytkownik nie istnieje albo haslo nieprawidlowe is displayed in a popup window
+    And TWOJE KONTO feature is not enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-3) Unsuccessful login with a valid E-mail address and an invalid password # Login.feature:44
+    Given The "Chrome" is turned on                                                                      # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                             # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                                     # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and invalid password in a popup window                                  # LoginWrongPassSteps.user_enters_invalid_pass()
+    And User clicks the Zaloguj sie button                                                               # _LoginCommonSteps.user_clicks_button()
+    Then Message Taki uzytkownik nie istnieje albo haslo nieprawidlowe is displayed in a popup window    # LoginWrongPassSteps.message_displayed_invalid_pass()
+    And TWOJE KONTO feature is not enabled                                                               # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                        # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-3) Unsuccessful login with a valid E-mail address and an invalid password # Login.feature:45
+    Given The "Firefox" is turned on                                                                     # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                             # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                                     # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and invalid password in a popup window                                  # LoginWrongPassSteps.user_enters_invalid_pass()
+    And User clicks the Zaloguj sie button                                                               # _LoginCommonSteps.user_clicks_button()
+    Then Message Taki uzytkownik nie istnieje albo haslo nieprawidlowe is displayed in a popup window    # LoginWrongPassSteps.message_displayed_invalid_pass()
+    And TWOJE KONTO feature is not enabled                                                               # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                        # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-4) Unsuccessful login with a non-existing E-mail address and a valid password # Login.feature:47
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    When User clicks the CZESC ZALOGUJ SIE hyperlink
+    And User enters non-existing E-mail and valid password in a popup window
+    And User clicks the Zaloguj sie button
+    Then Message Taki uzytkownik nie istnieje albo haslo nieprawidlowe is displayed in a popup window
+    And TWOJE KONTO feature is not enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-4) Unsuccessful login with a non-existing E-mail address and a valid password # Login.feature:58
+    Given The "Chrome" is turned on                                                                          # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                 # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                                         # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters non-existing E-mail and valid password in a popup window                                 # LoginNonExistingEmailSteps.user_enters_invalid_email()
+    And User clicks the Zaloguj sie button                                                                   # _LoginCommonSteps.user_clicks_button()
+    Then Message Taki uzytkownik nie istnieje albo haslo nieprawidlowe is displayed in a popup window        # LoginWrongPassSteps.message_displayed_invalid_pass()
+    And TWOJE KONTO feature is not enabled                                                                   # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                            # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-4) Unsuccessful login with a non-existing E-mail address and a valid password # Login.feature:59
+    Given The "Firefox" is turned on                                                                         # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                 # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                                         # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters non-existing E-mail and valid password in a popup window                                 # LoginNonExistingEmailSteps.user_enters_invalid_email()
+    And User clicks the Zaloguj sie button                                                                   # _LoginCommonSteps.user_clicks_button()
+    Then Message Taki uzytkownik nie istnieje albo haslo nieprawidlowe is displayed in a popup window        # LoginWrongPassSteps.message_displayed_invalid_pass()
+    And TWOJE KONTO feature is not enabled                                                                   # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                            # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-5) Unsuccessful login with a valid E-mail address and no password # Login.feature:61
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    When User clicks the CZESC ZALOGUJ SIE hyperlink
+    And User enters valid E-mail and no password in a popup window
+    And User clicks the Zaloguj sie button
+    Then Message Ta wartosc nie powinna byc pusta is displayed in a popup window
+    And TWOJE KONTO feature is not enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-5) Unsuccessful login with a valid E-mail address and no password # Login.feature:72
+    Given The "Chrome" is turned on                                                              # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                     # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                             # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and no password in a popup window                               # LoginNullPassSteps.user_enters_invalid_pass()
+    And User clicks the Zaloguj sie button                                                       # _LoginCommonSteps.user_clicks_button()
+    Then Message Ta wartosc nie powinna byc pusta is displayed in a popup window                 # LoginNullPassSteps.message_displayed_invalid_pass()
+    And TWOJE KONTO feature is not enabled                                                       # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-5) Unsuccessful login with a valid E-mail address and no password # Login.feature:73
+    Given The "Firefox" is turned on                                                             # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                     # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                             # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and no password in a popup window                               # LoginNullPassSteps.user_enters_invalid_pass()
+    And User clicks the Zaloguj sie button                                                       # _LoginCommonSteps.user_clicks_button()
+    Then Message Ta wartosc nie powinna byc pusta is displayed in a popup window                 # LoginNullPassSteps.message_displayed_invalid_pass()
+    And TWOJE KONTO feature is not enabled                                                       # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-6) Unsuccessful login with no E-mail address and a valid password # Login.feature:75
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    When User clicks the CZESC ZALOGUJ SIE hyperlink
+    And User enters no E-mail and valid password in a popup window
+    And User clicks the Zaloguj sie button
+    Then Message Ta wartosc nie powinna byc pusta is displayed in a popup window
+    And TWOJE KONTO feature is not enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-6) Unsuccessful login with no E-mail address and a valid password # Login.feature:86
+    Given The "Chrome" is turned on                                                              # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                     # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                             # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters no E-mail and valid password in a popup window                               # LoginNullEmailSteps.user_enters_invalid_pass()
+    And User clicks the Zaloguj sie button                                                       # _LoginCommonSteps.user_clicks_button()
+    Then Message Ta wartosc nie powinna byc pusta is displayed in a popup window                 # LoginNullPassSteps.message_displayed_invalid_pass()
+    And TWOJE KONTO feature is not enabled                                                       # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-6) Unsuccessful login with no E-mail address and a valid password # Login.feature:87
+    Given The "Firefox" is turned on                                                             # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                     # _LoginCommonSteps.user_is_on_Home_Page()
+    When User clicks the CZESC ZALOGUJ SIE hyperlink                                             # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters no E-mail and valid password in a popup window                               # LoginNullEmailSteps.user_enters_invalid_pass()
+    And User clicks the Zaloguj sie button                                                       # _LoginCommonSteps.user_clicks_button()
+    Then Message Ta wartosc nie powinna byc pusta is displayed in a popup window                 # LoginNullPassSteps.message_displayed_invalid_pass()
+    And TWOJE KONTO feature is not enabled                                                       # LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()
+    And Browser can be turned off                                                                # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-7) No login option when already signed in # Login.feature:89
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks the CZESC ZALOGUJ SIE hyperlink
+    And User enters valid E-mail and valid password in a popup window
+    And User clicks the Zaloguj sie button
+    Then There is no CZESC ZALOGUJ SIE hyperlink
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-7) No login option when already signed in # Login.feature:99
+    Given The "Chrome" is turned on                                      # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                             # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks the CZESC ZALOGUJ SIE hyperlink                      # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and valid password in a popup window    # LoginSuccessSteps.user_enters_valid()
+    And User clicks the Zaloguj sie button                               # _LoginCommonSteps.user_clicks_button()
+    Then There is no CZESC ZALOGUJ SIE hyperlink                         # LoginAlreadyLoggedSteps.testNoLoginOption()
+    And Browser can be turned off                                        # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-7) No login option when already signed in # Login.feature:100
+    Given The "Firefox" is turned on                                     # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                             # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks the CZESC ZALOGUJ SIE hyperlink                      # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and valid password in a popup window    # LoginSuccessSteps.user_enters_valid()
+    And User clicks the Zaloguj sie button                               # _LoginCommonSteps.user_clicks_button()
+    Then There is no CZESC ZALOGUJ SIE hyperlink                         # LoginAlreadyLoggedSteps.testNoLoginOption()
+    And Browser can be turned off                                        # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-8) Existing forgotten password option                      # Login.feature:102
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks the CZESC ZALOGUJ SIE hyperlink
+    When There is Zapomniales hasla hyperlink and user clicks it
+    And User enters e-mail address in input field and submits
+    Then The notice about a sent e-mail message is displayed and a button Zamknij enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-8) Existing forgotten password option                      # Login.feature:112
+    Given The "Chrome" is turned on                                                       # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                              # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks the CZESC ZALOGUJ SIE hyperlink                                       # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    When There is Zapomniales hasla hyperlink and user clicks it                          # LoginForgotPassSteps.user_clicks_forgotten_pass_hyperlink()
+    And User enters e-mail address in input field and submits                             # LoginForgotPassSteps.user_enters_email_address_in_input_field_and_submits()
+    Then The notice about a sent e-mail message is displayed and a button Zamknij enabled # LoginForgotPassSteps.the_notice_about_a_sent_e_mail_message_is_displayed_and_a_button_Zamknij_enabled()
+    And Browser can be turned off                                                         # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-8) Existing forgotten password option                      # Login.feature:113
+    Given The "Firefox" is turned on                                                      # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                              # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks the CZESC ZALOGUJ SIE hyperlink                                       # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    When There is Zapomniales hasla hyperlink and user clicks it                          # LoginForgotPassSteps.user_clicks_forgotten_pass_hyperlink()
+    And User enters e-mail address in input field and submits                             # LoginForgotPassSteps.user_enters_email_address_in_input_field_and_submits()
+    Then The notice about a sent e-mail message is displayed and a button Zamknij enabled # LoginForgotPassSteps.the_notice_about_a_sent_e_mail_message_is_displayed_and_a_button_Zamknij_enabled()
+    And Browser can be turned off                                                         # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-9) Checkbox for login with old credentials                       # Login.feature:115
+    Description: User can sign in with credentials for an account created before 2016, 1st of March
+
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks the CZESC ZALOGUJ SIE hyperlink
+    And User enters valid E-mail and valid password in a popup window
+    When User selects a checkbox that he wants to login with old username and saw the agreement
+    And User clicks the Zaloguj sie button
+    Then Message Jestes zalogowany is displayed in a popup window
+    And TWOJE KONTO feature is enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Login-9) Checkbox for login with old credentials                       # Login.feature:129
+    Description: User can sign in with credentials for an account created before 2016, 1st of March
+
+    Given The "Chrome" is turned on                                                             # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                    # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks the CZESC ZALOGUJ SIE hyperlink                                             # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and valid password in a popup window                           # LoginSuccessSteps.user_enters_valid()
+    When User selects a checkbox that he wants to login with old username and saw the agreement # LoginCheckboxSteps.user_selects_checkbox()
+    And User clicks the Zaloguj sie button                                                      # _LoginCommonSteps.user_clicks_button()
+    Then Message Jestes zalogowany is displayed in a popup window                               # LoginSuccessSteps.message_displayed_success()
+    And TWOJE KONTO feature is enabled                                                          # LoginSuccessSteps.KONTO_feature_is_enabled()
+    And Browser can be turned off                                                               # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Login-9) Checkbox for login with old credentials                       # Login.feature:130
+    Description: User can sign in with credentials for an account created before 2016, 1st of March
+
+    Given The "Firefox" is turned on                                                            # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                    # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks the CZESC ZALOGUJ SIE hyperlink                                             # _LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()
+    And User enters valid E-mail and valid password in a popup window                           # LoginSuccessSteps.user_enters_valid()
+    When User selects a checkbox that he wants to login with old username and saw the agreement # LoginCheckboxSteps.user_selects_checkbox()
+    And User clicks the Zaloguj sie button                                                      # _LoginCommonSteps.user_clicks_button()
+    Then Message Jestes zalogowany is displayed in a popup window                               # LoginSuccessSteps.message_displayed_success()
+    And TWOJE KONTO feature is enabled                                                          # LoginSuccessSteps.KONTO_feature_is_enabled()
+    And Browser can be turned off                                                               # _LoginCommonSteps.browser_is_turned_off()

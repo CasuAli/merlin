@@ -1,0 +1,344 @@
+#Author: Aleksandra Torbe'
+Feature: Shopping Cart (Quantity)
+  Description: Testing shopping cart functionalities connected with quantity of products
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:5
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks Do koszyka button
+    And User clicks Przejdz do koszyka button
+    And Shopping cart page is opened
+    When User changes "<quantity>" of a product
+    And User clicks Przelicz hyperlink
+    Then Quantity "<final_quantity>" in the input field is correct
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:20
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Chrome" is turned on                                                                # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "5" of a product                                                             # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "5" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:21
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Firefox" is turned on                                                               # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "5" of a product                                                             # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "5" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:22
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Chrome" is turned on                                                                # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "0" of a product                                                             # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "1" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:23
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Firefox" is turned on                                                               # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "0" of a product                                                             # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "1" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:24
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Chrome" is turned on                                                                # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "4.6" of a product                                                           # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "4" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:25
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Firefox" is turned on                                                               # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "4.6" of a product                                                           # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "4" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:26
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Chrome" is turned on                                                                # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "3,6" of a product                                                           # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "3" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:27
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Firefox" is turned on                                                               # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "3,6" of a product                                                           # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "3" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:28
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Chrome" is turned on                                                                # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "2 0" of a product                                                           # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "2" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-1 to Cart-Q-5) Changing quantity of a product in the shopping cart # CartQuantity.feature:29
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is incorrect
+    system should change it to correct value.
+
+    Given The "Firefox" is turned on                                                               # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                       # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                              # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                      # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                               # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "2 0" of a product                                                           # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                             # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "2" in the input field is correct                                                # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Browser can be turned off                                                                  # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-6 to Cart-Q-8) Changing quantity of a product to invalid in the shopping cart # CartQuantity.feature:31
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is invalid
+    system should change it to correct value and show a notice.
+
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks Do koszyka button
+    And User clicks Przejdz do koszyka button
+    And Shopping cart page is opened
+    When User changes "<quantity>" of a product
+    And User clicks Przelicz hyperlink
+    Then Quantity "<final_quantity>" in the input field is correct
+    And Notice about error is displayed
+    And Notice contains a message about error
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-Q-6 to Cart-Q-8) Changing quantity of a product to invalid in the shopping cart # CartQuantity.feature:48
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is invalid
+    system should change it to correct value and show a notice.
+
+    Given The "Chrome" is turned on                                                                           # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                  # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                                         # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                                 # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                                          # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "-1" of a product                                                                       # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                                        # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "1" in the input field is correct                                                           # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Notice about error is displayed                                                                       # CartChangeQuantitySteps.notice_about_error_is_displayed()
+    And Notice contains a message about error                                                                 # CartChangeQuantitySteps.notice_contains_a_message_about_error()
+    And Browser can be turned off                                                                             # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-6 to Cart-Q-8) Changing quantity of a product to invalid in the shopping cart # CartQuantity.feature:49
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is invalid
+    system should change it to correct value and show a notice.
+
+    Given The "Firefox" is turned on                                                                          # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                  # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                                         # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                                 # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                                          # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "-1" of a product                                                                       # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                                        # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "1" in the input field is correct                                                           # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Notice about error is displayed                                                                       # CartChangeQuantitySteps.notice_about_error_is_displayed()
+    And Notice contains a message about error                                                                 # CartChangeQuantitySteps.notice_contains_a_message_about_error()
+    And Browser can be turned off                                                                             # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-6 to Cart-Q-8) Changing quantity of a product to invalid in the shopping cart # CartQuantity.feature:50
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is invalid
+    system should change it to correct value and show a notice.
+
+    Given The "Chrome" is turned on                                                                           # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                  # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                                         # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                                 # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                                          # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "q" of a product                                                                        # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                                        # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "1" in the input field is correct                                                           # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Notice about error is displayed                                                                       # CartChangeQuantitySteps.notice_about_error_is_displayed()
+    And Notice contains a message about error                                                                 # CartChangeQuantitySteps.notice_contains_a_message_about_error()
+    And Browser can be turned off                                                                             # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-6 to Cart-Q-8) Changing quantity of a product to invalid in the shopping cart # CartQuantity.feature:51
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is invalid
+    system should change it to correct value and show a notice.
+
+    Given The "Firefox" is turned on                                                                          # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                  # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                                         # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                                 # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                                          # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "q" of a product                                                                        # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                                        # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "1" in the input field is correct                                                           # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Notice about error is displayed                                                                       # CartChangeQuantitySteps.notice_about_error_is_displayed()
+    And Notice contains a message about error                                                                 # CartChangeQuantitySteps.notice_contains_a_message_about_error()
+    And Browser can be turned off                                                                             # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-6 to Cart-Q-8) Changing quantity of a product to invalid in the shopping cart # CartQuantity.feature:52
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is invalid
+    system should change it to correct value and show a notice.
+
+    Given The "Chrome" is turned on                                                                           # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                  # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                                         # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                                 # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                                          # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "101" of a product                                                                      # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                                        # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "100" in the input field is correct                                                         # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Notice about error is displayed                                                                       # CartChangeQuantitySteps.notice_about_error_is_displayed()
+    And Notice contains a message about error                                                                 # CartChangeQuantitySteps.notice_contains_a_message_about_error()
+    And Browser can be turned off                                                                             # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-6 to Cart-Q-8) Changing quantity of a product to invalid in the shopping cart # CartQuantity.feature:53
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is invalid
+    system should change it to correct value and show a notice.
+
+    Given The "Firefox" is turned on                                                                          # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                                  # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                                         # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                                 # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                                          # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes "101" of a product                                                                      # CartChangeQuantitySteps.user_changes_of_a_product(String)
+    And User clicks Przelicz hyperlink                                                                        # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity "100" in the input field is correct                                                         # CartChangeQuantitySteps.quantity_in_the_input_field_is_correct(String)
+    And Notice about error is displayed                                                                       # CartChangeQuantitySteps.notice_about_error_is_displayed()
+    And Notice contains a message about error                                                                 # CartChangeQuantitySteps.notice_contains_a_message_about_error()
+    And Browser can be turned off                                                                             # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-9) Changing quantity of a product in the shopping cart over stock level # CartQuantity.feature:55
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is bigger than amount
+    of a product in the stock system should change it to correct value and show a notice.
+
+    Given The "<browser>" is turned on
+    And User is on a specific product's page
+    And User clicks Do koszyka button on this page
+    And User clicks Przejdz do koszyka button
+    And Shopping cart page is opened
+    When User changes quantity of a product
+    And User clicks Przelicz hyperlink
+    Then Quantity in the input field is changed to stock level
+    And Notice about error is displayed
+    And Notice contains a message about stock level
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-Q-9) Changing quantity of a product in the shopping cart over stock level # CartQuantity.feature:72
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is bigger than amount
+    of a product in the stock system should change it to correct value and show a notice.
+
+    Given The "Chrome" is turned on                                                                     # _LoginCommonSteps.classSetup(String)
+    And User is on a specific product's page                                                            # CartOverQuantitySteps.user_is_on_specific_product_s_page()
+    And User clicks Do koszyka button on this page                                                      # CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()
+    And User clicks Przejdz do koszyka button                                                           # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                                    # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes quantity of a product                                                             # CartOverQuantitySteps.user_changes_quantity_of_a_product()
+    And User clicks Przelicz hyperlink                                                                  # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity in the input field is changed to stock level                                          # CartOverQuantitySteps.quantity_in_the_input_field_is_changed_to_stock_level()
+    And Notice about error is displayed                                                                 # CartChangeQuantitySteps.notice_about_error_is_displayed()
+    And Notice contains a message about stock level                                                     # CartOverQuantitySteps.notice_contains_a_message_about_stock_level()
+    And Browser can be turned off                                                                       # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-Q-9) Changing quantity of a product in the shopping cart over stock level # CartQuantity.feature:73
+    Description: User can change quantity of products in the cart entering
+    a value in the input field. When entered value is bigger than amount
+    of a product in the stock system should change it to correct value and show a notice.
+
+    Given The "Firefox" is turned on                                                                    # _LoginCommonSteps.classSetup(String)
+    And User is on a specific product's page                                                            # CartOverQuantitySteps.user_is_on_specific_product_s_page()
+    And User clicks Do koszyka button on this page                                                      # CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()
+    And User clicks Przejdz do koszyka button                                                           # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    And Shopping cart page is opened                                                                    # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User changes quantity of a product                                                             # CartOverQuantitySteps.user_changes_quantity_of_a_product()
+    And User clicks Przelicz hyperlink                                                                  # CartChangeQuantitySteps.user_changes_of_a_product()
+    Then Quantity in the input field is changed to stock level                                          # CartOverQuantitySteps.quantity_in_the_input_field_is_changed_to_stock_level()
+    And Notice about error is displayed                                                                 # CartChangeQuantitySteps.notice_about_error_is_displayed()
+    And Notice contains a message about stock level                                                     # CartOverQuantitySteps.notice_contains_a_message_about_stock_level()
+    And Browser can be turned off                                                                       # _LoginCommonSteps.browser_is_turned_off()

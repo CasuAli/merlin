@@ -1,0 +1,275 @@
+#Author: Aleksandra Torbe'
+Feature: Shopping Cart (Additional)
+  Description: Testing additional shopping cart functionalities
+
+  Scenario Outline: (ID: Cart-A-1) Checkout      # CartAdditional.feature:5
+    Description: User should use checkout to buy products
+
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks Do koszyka button
+    And User clicks Przejdz do koszyka button
+    Then Shopping cart page is opened
+    When User clicks Przejdz do platnosci button
+    Then User is on checkout page
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-A-1) Checkout      # CartAdditional.feature:17
+    Description: User should use checkout to buy products
+
+    Given The "Chrome" is turned on              # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                     # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button            # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button    # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened            # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks Przejdz do platnosci button # CartCheckoutSteps.user_clicks_Przejdz_do_platnosci_button()
+    Then User is on checkout page                # CartCheckoutSteps.user_is_on_checkout_page()
+    And Browser can be turned off                # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-1) Checkout      # CartAdditional.feature:18
+    Description: User should use checkout to buy products
+
+    Given The "Firefox" is turned on             # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                     # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button            # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button    # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened            # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks Przejdz do platnosci button # CartCheckoutSteps.user_clicks_Przejdz_do_platnosci_button()
+    Then User is on checkout page                # CartCheckoutSteps.user_is_on_checkout_page()
+    And Browser can be turned off                # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-2) Continuing shopping      # CartAdditional.feature:20
+    Description: User can come back to the Home Page to continue shopping
+    without losing products in the shopping cart
+
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks Do koszyka button
+    And User clicks Przejdz do koszyka button
+    Then Shopping cart page is opened
+    When User clicks Wroc do zakupow hyperlink
+    Then User comes back to Home Page
+    And Quantity one of the products in the cart is correct
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-A-2) Continuing shopping      # CartAdditional.feature:34
+    Description: User can come back to the Home Page to continue shopping
+    without losing products in the shopping cart
+
+    Given The "Chrome" is turned on                         # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                       # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button               # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                       # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks Wroc do zakupow hyperlink              # CartContinueShoppingSteps.user_clicks_Wroc_do_zakupow_hyperlink()
+    Then User comes back to Home Page                       # CartContinueShoppingSteps.user_comes_back_to_Home_Page()
+    And Quantity one of the products in the cart is correct # _CartCommonSteps.quantity_one_of_the_products_in_the_cart_is_correct()
+    And Browser can be turned off                           # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-2) Continuing shopping      # CartAdditional.feature:35
+    Description: User can come back to the Home Page to continue shopping
+    without losing products in the shopping cart
+
+    Given The "Firefox" is turned on                        # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                       # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button               # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                       # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks Wroc do zakupow hyperlink              # CartContinueShoppingSteps.user_clicks_Wroc_do_zakupow_hyperlink()
+    Then User comes back to Home Page                       # CartContinueShoppingSteps.user_comes_back_to_Home_Page()
+    And Quantity one of the products in the cart is correct # _CartCommonSteps.quantity_one_of_the_products_in_the_cart_is_correct()
+    And Browser can be turned off                           # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-3) Promo code             # CartAdditional.feature:37
+    Description: User can use promo code in the shopping cart before checkout
+
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks Do koszyka button
+    And User clicks Przejdz do koszyka button
+    Then Shopping cart page is opened
+    When User clicks Posiadasz link promocyjny? hyperlink
+    Then Input field for promo code is enabled
+    And OK button for submitting promo code is enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-A-3) Promo code             # CartAdditional.feature:50
+    Description: User can use promo code in the shopping cart before checkout
+
+    Given The "Chrome" is turned on                       # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                              # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                     # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button             # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                     # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks Posiadasz link promocyjny? hyperlink # CartPromoCodeSteps.user_clicks_Posiadasz_link_promocyjny_hyperlink()
+    Then Input field for promo code is enabled            # CartPromoCodeSteps.input_field_for_promo_code_is_enabled()
+    And OK button for submitting promo code is enabled    # CartPromoCodeSteps.ok_button_for_submitting_promo_code_is_enabled()
+    And Browser can be turned off                         # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-3) Promo code             # CartAdditional.feature:51
+    Description: User can use promo code in the shopping cart before checkout
+
+    Given The "Firefox" is turned on                      # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                              # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                     # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button             # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                     # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks Posiadasz link promocyjny? hyperlink # CartPromoCodeSteps.user_clicks_Posiadasz_link_promocyjny_hyperlink()
+    Then Input field for promo code is enabled            # CartPromoCodeSteps.input_field_for_promo_code_is_enabled()
+    And OK button for submitting promo code is enabled    # CartPromoCodeSteps.ok_button_for_submitting_promo_code_is_enabled()
+    And Browser can be turned off                         # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-4) Estimated sending date of products being displayed in the shopping cart # CartAdditional.feature:53
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks Do koszyka button
+    And User clicks Przejdz do koszyka button
+    Then Shopping cart page is opened
+    And Notice is displayed
+    And Information about sending date of products is displayed
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-A-4) Estimated sending date of products being displayed in the shopping cart # CartAdditional.feature:64
+    Given The "Chrome" is turned on                                                                        # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                               # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                                      # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                              # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                                                                      # _CartCommonSteps.shopping_cart_page_is_opened()
+    And Notice is displayed                                                                                # CartSendingDateSteps.notice_is_displayed()
+    And Information about sending date of products is displayed                                            # CartSendingDateSteps.information_about_sending_date_of_products_is_displayed()
+    And Browser can be turned off                                                                          # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-4) Estimated sending date of products being displayed in the shopping cart # CartAdditional.feature:65
+    Given The "Firefox" is turned on                                                                       # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                                               # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                                                                      # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                                                              # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                                                                      # _CartCommonSteps.shopping_cart_page_is_opened()
+    And Notice is displayed                                                                                # CartSendingDateSteps.notice_is_displayed()
+    And Information about sending date of products is displayed                                            # CartSendingDateSteps.information_about_sending_date_of_products_is_displayed()
+    And Browser can be turned off                                                                          # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-5) Adding Bookmark               # CartAdditional.feature:67
+    Description: User can save a product to remember about it later
+
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User clicks Do koszyka button
+    And User clicks Przejdz do koszyka button
+    Then Shopping cart page is opened
+    And Dodaj do schowka hyperlink is enabled
+    When User clicks Dodaj do schowka hyperlink
+    Then Produkt zostal dodany do schowka hyperlink is displayed
+    When User clicks Produkt zostal dodany do schowka hyperlink
+    Then Dodaj do schowka hyperlink is enabled
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-A-5) Adding Bookmark               # CartAdditional.feature:82
+    Description: User can save a product to remember about it later
+
+    Given The "Chrome" is turned on                              # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                     # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                            # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                    # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                            # _CartCommonSteps.shopping_cart_page_is_opened()
+    And Dodaj do schowka hyperlink is enabled                    # CartBookmarkSteps.dodaj_do_schowka_hyperlink_is_enabled()
+    When User clicks Dodaj do schowka hyperlink                  # CartBookmarkSteps.user_clicks_Dodaj_do_schowka_hyperlink()
+    Then Produkt zostal dodany do schowka hyperlink is displayed # CartBookmarkSteps.produkt_zostal_dodany_do_schowka_hyperlink_is_displayed()
+    When User clicks Produkt zostal dodany do schowka hyperlink  # CartBookmarkSteps.user_clicks_Produkt_zostal_dodany_do_schowka_hyperlink()
+    Then Dodaj do schowka hyperlink is enabled                   # CartBookmarkSteps.dodaj_do_schowka_hyperlink_is_enabled()
+    And Browser can be turned off                                # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-5) Adding Bookmark               # CartAdditional.feature:83
+    Description: User can save a product to remember about it later
+
+    Given The "Firefox" is turned on                             # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                     # _LoginCommonSteps.user_is_on_Home_Page()
+    And User clicks Do koszyka button                            # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
+    And User clicks Przejdz do koszyka button                    # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                            # _CartCommonSteps.shopping_cart_page_is_opened()
+    And Dodaj do schowka hyperlink is enabled                    # CartBookmarkSteps.dodaj_do_schowka_hyperlink_is_enabled()
+    When User clicks Dodaj do schowka hyperlink                  # CartBookmarkSteps.user_clicks_Dodaj_do_schowka_hyperlink()
+    Then Produkt zostal dodany do schowka hyperlink is displayed # CartBookmarkSteps.produkt_zostal_dodany_do_schowka_hyperlink_is_displayed()
+    When User clicks Produkt zostal dodany do schowka hyperlink  # CartBookmarkSteps.user_clicks_Produkt_zostal_dodany_do_schowka_hyperlink()
+    Then Dodaj do schowka hyperlink is enabled                   # CartBookmarkSteps.dodaj_do_schowka_hyperlink_is_enabled()
+    And Browser can be turned off                                # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-6) Clicking on a product's title directing to its page # CartAdditional.feature:85
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User goes to some product's page
+    And User clicks Do koszyka button on this page
+    And User clicks Przejdz do koszyka button
+    Then Shopping cart page is opened
+    When User clicks on a product's title
+    Then User is directed to a product's page
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-A-6) Clicking on a product's title directing to its page # CartAdditional.feature:97
+    Given The "Chrome" is turned on                                                    # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                           # _LoginCommonSteps.user_is_on_Home_Page()
+    And User goes to some product's page                                               # CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()
+    And User clicks Do koszyka button on this page                                     # CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()
+    And User clicks Przejdz do koszyka button                                          # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                                                  # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks on a product's title                                              # CartProductSiteTitleDirectingSteps.user_clicks_on_a_product_s_title()
+    Then User is directed to a product's page                                          # CartProductSiteTitleDirectingSteps.user_is_directed_to_a_product_s_page()
+    And Browser can be turned off                                                      # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-6) Clicking on a product's title directing to its page # CartAdditional.feature:98
+    Given The "Firefox" is turned on                                                   # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                           # _LoginCommonSteps.user_is_on_Home_Page()
+    And User goes to some product's page                                               # CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()
+    And User clicks Do koszyka button on this page                                     # CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()
+    And User clicks Przejdz do koszyka button                                          # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                                                  # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks on a product's title                                              # CartProductSiteTitleDirectingSteps.user_clicks_on_a_product_s_title()
+    Then User is directed to a product's page                                          # CartProductSiteTitleDirectingSteps.user_is_directed_to_a_product_s_page()
+    And Browser can be turned off                                                      # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-7) Clicking on a product's image directing to its page # CartAdditional.feature:100
+    Given The "<browser>" is turned on
+    And User is on Home Page
+    And User goes to some product's page
+    And User clicks Do koszyka button on this page
+    And User clicks Przejdz do koszyka button
+    Then Shopping cart page is opened
+    When User clicks on a product's image
+    Then User is directed to a product's page
+    And Browser can be turned off
+
+    Examples: 
+
+  Scenario Outline: (ID: Cart-A-7) Clicking on a product's image directing to its page # CartAdditional.feature:112
+    Given The "Chrome" is turned on                                                    # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                           # _LoginCommonSteps.user_is_on_Home_Page()
+    And User goes to some product's page                                               # CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()
+    And User clicks Do koszyka button on this page                                     # CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()
+    And User clicks Przejdz do koszyka button                                          # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                                                  # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks on a product's image                                              # CartProductSiteImageDirectingSteps.user_clicks_on_a_product_s_title()
+    Then User is directed to a product's page                                          # CartProductSiteTitleDirectingSteps.user_is_directed_to_a_product_s_page()
+    And Browser can be turned off                                                      # _LoginCommonSteps.browser_is_turned_off()
+
+  Scenario Outline: (ID: Cart-A-7) Clicking on a product's image directing to its page # CartAdditional.feature:113
+    Given The "Firefox" is turned on                                                   # _LoginCommonSteps.classSetup(String)
+    And User is on Home Page                                                           # _LoginCommonSteps.user_is_on_Home_Page()
+    And User goes to some product's page                                               # CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()
+    And User clicks Do koszyka button on this page                                     # CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()
+    And User clicks Przejdz do koszyka button                                          # _CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()
+    Then Shopping cart page is opened                                                  # _CartCommonSteps.shopping_cart_page_is_opened()
+    When User clicks on a product's image                                              # CartProductSiteImageDirectingSteps.user_clicks_on_a_product_s_title()
+    Then User is directed to a product's page                                          # CartProductSiteTitleDirectingSteps.user_is_directed_to_a_product_s_page()
+    And Browser can be turned off                                                      # _LoginCommonSteps.browser_is_turned_off()
