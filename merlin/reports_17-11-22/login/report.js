@@ -151,56 +151,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3628474499,
+  "duration": 3592354577,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4814339385,
+  "duration": 4826942638,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 124756838,
+  "duration": 121865223,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.user_enters_valid()"
 });
 formatter.result({
-  "duration": 268041187,
+  "duration": 251442928,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 73451919,
+  "duration": 76899406,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.message_displayed_success()"
 });
 formatter.result({
-  "duration": 16614,
+  "duration": 16613,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.KONTO_feature_is_enabled()"
 });
 formatter.result({
-  "duration": 4356182130,
+  "duration": 4586804504,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 827748410,
+  "duration": 826963028,
   "status": "passed"
 });
 formatter.scenario({
@@ -264,56 +264,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5708822553,
+  "duration": 5740800412,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 3950720424,
+  "duration": 4492171978,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 298649771,
+  "duration": 293122275,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.user_enters_valid()"
 });
 formatter.result({
-  "duration": 136501865,
+  "duration": 116011952,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 228480539,
+  "duration": 228897530,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.message_displayed_success()"
 });
 formatter.result({
-  "duration": 12460,
+  "duration": 27941,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.KONTO_feature_is_enabled()"
 });
 formatter.result({
-  "duration": 2997935766,
+  "duration": 2703494971,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 227041202,
+  "duration": 230732954,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -455,56 +455,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3092182945,
+  "duration": 3053699280,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4689921991,
+  "duration": 5140764694,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 91243524,
+  "duration": 123906429,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.user_enters_invalid_email()"
 });
 formatter.result({
-  "duration": 244394058,
+  "duration": 214297959,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 79363701,
+  "duration": 76941695,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.message_displayed_invalid_email()"
 });
 formatter.result({
-  "duration": 218707239,
+  "duration": 266768589,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3182697739,
+  "duration": 3146165243,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 794850554,
+  "duration": 787679814,
   "status": "passed"
 });
 formatter.scenario({
@@ -568,56 +568,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5715600127,
+  "duration": 5710709045,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4312226443,
+  "duration": 4269592143,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 295487155,
+  "duration": 299493965,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.user_enters_invalid_email()"
 });
 formatter.result({
-  "duration": 113442630,
+  "duration": 86984233,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 230427724,
+  "duration": 229176184,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.message_displayed_invalid_email()"
 });
 formatter.result({
-  "duration": 100311126,
+  "duration": 60880883,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3009760840,
+  "duration": 3015089672,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 244876607,
+  "duration": 232774537,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -759,56 +759,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3113579315,
+  "duration": 3051893307,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 5137864176,
+  "duration": 5003982731,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 128111643,
+  "duration": 87513603,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongPassSteps.user_enters_invalid_pass()"
 });
 formatter.result({
-  "duration": 232314495,
+  "duration": 289823344,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 75657368,
+  "duration": 77896221,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongPassSteps.message_displayed_invalid_pass()"
 });
 formatter.result({
-  "duration": 483466494,
+  "duration": 373921344,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3156483439,
+  "duration": 3232680142,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 799374727,
+  "duration": 797317207,
   "status": "passed"
 });
 formatter.scenario({
@@ -872,56 +872,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5718829953,
+  "duration": 5713813144,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 3855705245,
+  "duration": 4692286838,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 281941068,
+  "duration": 291229836,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongPassSteps.user_enters_invalid_pass()"
 });
 formatter.result({
-  "duration": 118746885,
+  "duration": 95863442,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 240779856,
+  "duration": 226126458,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongPassSteps.message_displayed_invalid_pass()"
 });
 formatter.result({
-  "duration": 211143919,
+  "duration": 129399487,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3023223105,
+  "duration": 3014555772,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 270895698,
+  "duration": 234652629,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1063,56 +1063,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3097096782,
+  "duration": 3049252502,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4707743048,
+  "duration": 5077270191,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 119534518,
+  "duration": 119773421,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNonExistingEmailSteps.user_enters_invalid_email()"
 });
 formatter.result({
-  "duration": 259705714,
+  "duration": 249359433,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 70319132,
+  "duration": 72454137,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongPassSteps.message_displayed_invalid_pass()"
 });
 formatter.result({
-  "duration": 319134283,
+  "duration": 313197913,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3324236154,
+  "duration": 3236627758,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 797138693,
+  "duration": 860142635,
   "status": "passed"
 });
 formatter.scenario({
@@ -1176,56 +1176,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5712254761,
+  "duration": 5687948048,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 3976680235,
+  "duration": 4322619329,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 282969975,
+  "duration": 296407236,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNonExistingEmailSteps.user_enters_invalid_email()"
 });
 formatter.result({
-  "duration": 134842398,
+  "duration": 102127144,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 229682379,
+  "duration": 244160512,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongPassSteps.message_displayed_invalid_pass()"
 });
 formatter.result({
-  "duration": 132602966,
+  "duration": 89245947,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3030838154,
+  "duration": 3010571530,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 254808491,
+  "duration": 229761059,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1367,56 +1367,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3074243328,
+  "duration": 3041741648,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4329109589,
+  "duration": 5006231230,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 91463654,
+  "duration": 124153745,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNullPassSteps.user_enters_invalid_pass()"
 });
 formatter.result({
-  "duration": 218703841,
+  "duration": 186727326,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 79467536,
+  "duration": 73244038,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNullPassSteps.message_displayed_invalid_pass()"
 });
 formatter.result({
-  "duration": 373931446,
+  "duration": 426999880,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3289479467,
+  "duration": 3150000339,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 792273188,
+  "duration": 871035110,
   "status": "passed"
 });
 formatter.scenario({
@@ -1480,56 +1480,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5745999910,
+  "duration": 5699556040,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4025488967,
+  "duration": 4271132300,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 292586202,
+  "duration": 293937096,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNullPassSteps.user_enters_invalid_pass()"
 });
 formatter.result({
-  "duration": 87763740,
+  "duration": 83637727,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 239737733,
+  "duration": 227540501,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNullPassSteps.message_displayed_invalid_pass()"
 });
 formatter.result({
-  "duration": 129452810,
+  "duration": 202540822,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3018391582,
+  "duration": 3012783403,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 253478274,
+  "duration": 234274669,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1671,56 +1671,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3122060534,
+  "duration": 3060030947,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 5288202489,
+  "duration": 5002577749,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 121481325,
+  "duration": 125537204,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNullEmailSteps.user_enters_invalid_pass()"
 });
 formatter.result({
-  "duration": 163335020,
+  "duration": 158514805,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 73466645,
+  "duration": 71118253,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNullPassSteps.message_displayed_invalid_pass()"
 });
 formatter.result({
-  "duration": 355342768,
+  "duration": 368859862,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3164238571,
+  "duration": 3187662974,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 798217442,
+  "duration": 800008986,
   "status": "passed"
 });
 formatter.scenario({
@@ -1784,56 +1784,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5702259821,
+  "duration": 5699656477,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 3911668001,
+  "duration": 4305605502,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 281801362,
+  "duration": 293679586,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNullEmailSteps.user_enters_invalid_pass()"
 });
 formatter.result({
-  "duration": 66265424,
+  "duration": 61746300,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 245219827,
+  "duration": 235754412,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginNullPassSteps.message_displayed_invalid_pass()"
 });
 formatter.result({
-  "duration": 15192340,
+  "duration": 178655386,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginWrongEmailFormatSteps.KONTO_feature_is_not_enabled()"
 });
 formatter.result({
-  "duration": 3012785262,
+  "duration": 3018549452,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 260363082,
+  "duration": 254138483,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1965,49 +1965,49 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3092224857,
+  "duration": 3029666966,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4569850931,
+  "duration": 5118490399,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 119287958,
+  "duration": 87106947,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.user_enters_valid()"
 });
 formatter.result({
-  "duration": 250918276,
+  "duration": 282484668,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 71222682,
+  "duration": 72757335,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginAlreadyLoggedSteps.testNoLoginOption()"
 });
 formatter.result({
-  "duration": 10191585235,
+  "duration": 10102154708,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 826728564,
+  "duration": 851375945,
   "status": "passed"
 });
 formatter.scenario({
@@ -2066,49 +2066,49 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5724954312,
+  "duration": 5696775906,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4331385269,
+  "duration": 4596071490,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 298632780,
+  "duration": 291620633,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.user_enters_valid()"
 });
 formatter.result({
-  "duration": 104649529,
+  "duration": 105437779,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 230530425,
+  "duration": 230341024,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginAlreadyLoggedSteps.testNoLoginOption()"
 });
 formatter.result({
-  "duration": 10020886635,
+  "duration": 10023160479,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 244368760,
+  "duration": 247771702,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2240,49 +2240,49 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3081710743,
+  "duration": 3021117007,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4670985939,
+  "duration": 4891273862,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 124789688,
+  "duration": 123153532,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginForgotPassSteps.user_clicks_forgotten_pass_hyperlink()"
 });
 formatter.result({
-  "duration": 380589705,
+  "duration": 377205548,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginForgotPassSteps.user_enters_email_address_in_input_field_and_submits()"
 });
 formatter.result({
-  "duration": 224159506,
+  "duration": 215661406,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginForgotPassSteps.the_notice_about_a_sent_e_mail_message_is_displayed_and_a_button_Zamknij_enabled()"
 });
 formatter.result({
-  "duration": 1273102656,
+  "duration": 1099102715,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 800490100,
+  "duration": 840826315,
   "status": "passed"
 });
 formatter.scenario({
@@ -2341,49 +2341,49 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5703720303,
+  "duration": 5707589089,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4679723536,
+  "duration": 4043842135,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 290958828,
+  "duration": 302294488,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginForgotPassSteps.user_clicks_forgotten_pass_hyperlink()"
 });
 formatter.result({
-  "duration": 50466312,
+  "duration": 70257745,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginForgotPassSteps.user_enters_email_address_in_input_field_and_submits()"
 });
 formatter.result({
-  "duration": 294744831,
+  "duration": 307239675,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginForgotPassSteps.the_notice_about_a_sent_e_mail_message_is_displayed_and_a_button_Zamknij_enabled()"
 });
 formatter.result({
-  "duration": 727532434,
+  "duration": 874018382,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 230737340,
+  "duration": 236218460,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2535,63 +2535,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3050497273,
+  "duration": 3033431454,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4659195224,
+  "duration": 4613775915,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 122795684,
+  "duration": 85423688,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.user_enters_valid()"
 });
 formatter.result({
-  "duration": 244811662,
+  "duration": 291511890,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginCheckboxSteps.user_selects_checkbox()"
 });
 formatter.result({
-  "duration": 83861820,
+  "duration": 82214622,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 70170742,
+  "duration": 70129745,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.message_displayed_success()"
 });
 formatter.result({
-  "duration": 10950,
+  "duration": 19634,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.KONTO_feature_is_enabled()"
 });
 formatter.result({
-  "duration": 4440611455,
+  "duration": 4679453217,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 853610428,
+  "duration": 830995222,
   "status": "passed"
 });
 formatter.scenario({
@@ -2660,63 +2660,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5745200571,
+  "duration": 5692208301,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4062502454,
+  "duration": 4278728863,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_the_CZESC_ZALOGUJ_SIE_hyperlink()"
 });
 formatter.result({
-  "duration": 300168779,
+  "duration": 296358150,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.user_enters_valid()"
 });
 formatter.result({
-  "duration": 125605262,
+  "duration": 98852378,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginCheckboxSteps.user_selects_checkbox()"
 });
 formatter.result({
-  "duration": 225223528,
+  "duration": 231389946,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_clicks_button()"
 });
 formatter.result({
-  "duration": 233307910,
+  "duration": 225096038,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.message_displayed_success()"
 });
 formatter.result({
-  "duration": 12082,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSuccessSteps.KONTO_feature_is_enabled()"
 });
 formatter.result({
-  "duration": 3192060231,
+  "duration": 2804602267,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 232725302,
+  "duration": 232005027,
   "status": "passed"
 });
 });

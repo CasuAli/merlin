@@ -46,7 +46,6 @@ Feature: Shopping Cart (Basic)
     Then Shopping cart page is opened
     And Information about product's title is displayed
     And Information about product's author is displayed
-    And Information about product's sending time is displayed
     And Information about product's price is displayed
     And Product's title is linked to its page
     And Product's image is linked to its page
@@ -54,7 +53,7 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-2) Information about a product is displayed # CartBasic.feature:36
+  Scenario Outline: (ID: Cart-B-2) Information about a product is displayed # CartBasic.feature:35
     Given The "Chrome" is turned on                                         # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                # _LoginCommonSteps.user_is_on_Home_Page()
     And User goes to chosen product's page                                  # CartShowingProductInfoSteps.user_goes_to_chosen_product_s_page()
@@ -63,13 +62,12 @@ Feature: Shopping Cart (Basic)
     Then Shopping cart page is opened                                       # _CartCommonSteps.shopping_cart_page_is_opened()
     And Information about product's title is displayed                      # CartShowingProductInfoSteps.information_about_product_s_title_is_displayed()
     And Information about product's author is displayed                     # CartShowingProductInfoSteps.information_about_product_s_author_is_displayed()
-    And Information about product's sending time is displayed               # CartShowingProductInfoSteps.information_about_product_s_sending_time_is_displayed()
     And Information about product's price is displayed                      # CartShowingProductInfoSteps.information_about_product_s_price_is_displayed()
     And Product's title is linked to its page                               # CartShowingProductInfoSteps.product_s_title_is_linked_to_its_page()
     And Product's image is linked to its page                               # CartShowingProductInfoSteps.product_s_image_is_linked_to_its_page()
     And Browser can be turned off                                           # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-2) Information about a product is displayed # CartBasic.feature:37
+  Scenario Outline: (ID: Cart-B-2) Information about a product is displayed # CartBasic.feature:36
     Given The "Firefox" is turned on                                        # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                # _LoginCommonSteps.user_is_on_Home_Page()
     And User goes to chosen product's page                                  # CartShowingProductInfoSteps.user_goes_to_chosen_product_s_page()
@@ -78,13 +76,12 @@ Feature: Shopping Cart (Basic)
     Then Shopping cart page is opened                                       # _CartCommonSteps.shopping_cart_page_is_opened()
     And Information about product's title is displayed                      # CartShowingProductInfoSteps.information_about_product_s_title_is_displayed()
     And Information about product's author is displayed                     # CartShowingProductInfoSteps.information_about_product_s_author_is_displayed()
-    And Information about product's sending time is displayed               # CartShowingProductInfoSteps.information_about_product_s_sending_time_is_displayed()
     And Information about product's price is displayed                      # CartShowingProductInfoSteps.information_about_product_s_price_is_displayed()
     And Product's title is linked to its page                               # CartShowingProductInfoSteps.product_s_title_is_linked_to_its_page()
     And Product's image is linked to its page                               # CartShowingProductInfoSteps.product_s_image_is_linked_to_its_page()
     And Browser can be turned off                                           # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-3) Adding a product to the shopping cart from a product's page # CartBasic.feature:39
+  Scenario Outline: (ID: Cart-B-3) Adding a product to the shopping cart from a product's page # CartBasic.feature:38
     Given The "<browser>" is turned on
     And User is on Home Page
     When User goes to some product's page
@@ -98,7 +95,7 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-3) Adding a product to the shopping cart from a product's page # CartBasic.feature:52
+  Scenario Outline: (ID: Cart-B-3) Adding a product to the shopping cart from a product's page # CartBasic.feature:51
     Given The "Chrome" is turned on                                                            # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                   # _LoginCommonSteps.user_is_on_Home_Page()
     When User goes to some product's page                                                      # CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()
@@ -110,7 +107,7 @@ Feature: Shopping Cart (Basic)
     And Quantity one in the input field is correct                                             # _CartCommonSteps.quantity_one_in_the_input_field_is_correct()
     And Browser can be turned off                                                              # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-3) Adding a product to the shopping cart from a product's page # CartBasic.feature:53
+  Scenario Outline: (ID: Cart-B-3) Adding a product to the shopping cart from a product's page # CartBasic.feature:52
     Given The "Firefox" is turned on                                                           # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                   # _LoginCommonSteps.user_is_on_Home_Page()
     When User goes to some product's page                                                      # CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()
@@ -122,7 +119,7 @@ Feature: Shopping Cart (Basic)
     And Quantity one in the input field is correct                                             # _CartCommonSteps.quantity_one_in_the_input_field_is_correct()
     And Browser can be turned off                                                              # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-4) Adding the same product to the shopping cart again # CartBasic.feature:55
+  Scenario Outline: (ID: Cart-B-4) Adding the same product to the shopping cart again # CartBasic.feature:54
     Description: When user adds a product that is already in the cart
     system should change quantity instead of adding a new position.
 
@@ -140,7 +137,7 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-4) Adding the same product to the shopping cart again # CartBasic.feature:71
+  Scenario Outline: (ID: Cart-B-4) Adding the same product to the shopping cart again # CartBasic.feature:70
     Description: When user adds a product that is already in the cart
     system should change quantity instead of adding a new position.
 
@@ -156,7 +153,7 @@ Feature: Shopping Cart (Basic)
     And Quantity two in the input field is correct                                    # _CartCommonSteps.quantity_two_in_the_input_field_is_correct()
     And Browser can be turned off                                                     # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-4) Adding the same product to the shopping cart again # CartBasic.feature:72
+  Scenario Outline: (ID: Cart-B-4) Adding the same product to the shopping cart again # CartBasic.feature:71
     Description: When user adds a product that is already in the cart
     system should change quantity instead of adding a new position.
 
@@ -172,7 +169,7 @@ Feature: Shopping Cart (Basic)
     And Quantity two in the input field is correct                                    # _CartCommonSteps.quantity_two_in_the_input_field_is_correct()
     And Browser can be turned off                                                     # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-5) Adding more products to the shopping cart # CartBasic.feature:74
+  Scenario Outline: (ID: Cart-B-5) Adding more products to the shopping cart # CartBasic.feature:73
     Given The "<browser>" is turned on
     And User is on Home Page
     When User clicks Do koszyka button
@@ -186,7 +183,7 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-5) Adding more products to the shopping cart # CartBasic.feature:87
+  Scenario Outline: (ID: Cart-B-5) Adding more products to the shopping cart # CartBasic.feature:86
     Given The "Chrome" is turned on                                          # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                 # _LoginCommonSteps.user_is_on_Home_Page()
     When User clicks Do koszyka button                                       # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
@@ -198,7 +195,7 @@ Feature: Shopping Cart (Basic)
     And Quantity one in the input field is correct                           # _CartCommonSteps.quantity_one_in_the_input_field_is_correct()
     And Browser can be turned off                                            # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-5) Adding more products to the shopping cart # CartBasic.feature:88
+  Scenario Outline: (ID: Cart-B-5) Adding more products to the shopping cart # CartBasic.feature:87
     Given The "Firefox" is turned on                                         # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                 # _LoginCommonSteps.user_is_on_Home_Page()
     When User clicks Do koszyka button                                       # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
@@ -210,7 +207,7 @@ Feature: Shopping Cart (Basic)
     And Quantity one in the input field is correct                           # _CartCommonSteps.quantity_one_in_the_input_field_is_correct()
     And Browser can be turned off                                            # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-6) Final value (sum) of products in the shopping cart # CartBasic.feature:90
+  Scenario Outline: (ID: Cart-B-6) Final value (sum) of products in the shopping cart # CartBasic.feature:89
     Given The "<browser>" is turned on
     And User is on Home Page
     When User clicks Do koszyka button
@@ -223,7 +220,7 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-6) Final value (sum) of products in the shopping cart # CartBasic.feature:102
+  Scenario Outline: (ID: Cart-B-6) Final value (sum) of products in the shopping cart # CartBasic.feature:101
     Given The "Chrome" is turned on                                                   # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                          # _LoginCommonSteps.user_is_on_Home_Page()
     When User clicks Do koszyka button                                                # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
@@ -234,7 +231,7 @@ Feature: Shopping Cart (Basic)
     And Summed value of products in the cart is correct                               # CartSumSteps.summed_value_of_products_in_the_cart_is_correct()
     And Browser can be turned off                                                     # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-6) Final value (sum) of products in the shopping cart # CartBasic.feature:103
+  Scenario Outline: (ID: Cart-B-6) Final value (sum) of products in the shopping cart # CartBasic.feature:102
     Given The "Firefox" is turned on                                                  # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                          # _LoginCommonSteps.user_is_on_Home_Page()
     When User clicks Do koszyka button                                                # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
@@ -245,7 +242,7 @@ Feature: Shopping Cart (Basic)
     And Summed value of products in the cart is correct                               # CartSumSteps.summed_value_of_products_in_the_cart_is_correct()
     And Browser can be turned off                                                     # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-7) Removing a product from the shopping cart # CartBasic.feature:105
+  Scenario Outline: (ID: Cart-B-7) Removing a product from the shopping cart # CartBasic.feature:104
     Given The "<browser>" is turned on
     And User is on Home Page
     And User clicks Do koszyka button
@@ -258,7 +255,7 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-7) Removing a product from the shopping cart # CartBasic.feature:117
+  Scenario Outline: (ID: Cart-B-7) Removing a product from the shopping cart # CartBasic.feature:116
     Given The "Chrome" is turned on                                          # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                 # _LoginCommonSteps.user_is_on_Home_Page()
     And User clicks Do koszyka button                                        # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
@@ -269,7 +266,7 @@ Feature: Shopping Cart (Basic)
     And Information about empty cart is displayed                            # CartProductDisappearsAfterLogoutSteps.information_about_empty_cart_is_displayed()
     And Browser can be turned off                                            # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-7) Removing a product from the shopping cart # CartBasic.feature:118
+  Scenario Outline: (ID: Cart-B-7) Removing a product from the shopping cart # CartBasic.feature:117
     Given The "Firefox" is turned on                                         # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                 # _LoginCommonSteps.user_is_on_Home_Page()
     And User clicks Do koszyka button                                        # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
@@ -280,7 +277,7 @@ Feature: Shopping Cart (Basic)
     And Information about empty cart is displayed                            # CartProductDisappearsAfterLogoutSteps.information_about_empty_cart_is_displayed()
     And Browser can be turned off                                            # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-8) Removing a product from the shopping cart when more products are in it # CartBasic.feature:120
+  Scenario Outline: (ID: Cart-B-8) Removing a product from the shopping cart when more products are in it # CartBasic.feature:119
     Given The "<browser>" is turned on
     And User is on Home Page
     And User clicks Do koszyka button
@@ -294,7 +291,7 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-8) Removing a product from the shopping cart when more products are in it # CartBasic.feature:133
+  Scenario Outline: (ID: Cart-B-8) Removing a product from the shopping cart when more products are in it # CartBasic.feature:132
     Given The "Chrome" is turned on                                                                       # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                              # _LoginCommonSteps.user_is_on_Home_Page()
     And User clicks Do koszyka button                                                                     # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
@@ -306,7 +303,7 @@ Feature: Shopping Cart (Basic)
     Then Quantity one of the products in the cart is correct                                              # _CartCommonSteps.quantity_one_of_the_products_in_the_cart_is_correct()
     And Browser can be turned off                                                                         # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-8) Removing a product from the shopping cart when more products are in it # CartBasic.feature:134
+  Scenario Outline: (ID: Cart-B-8) Removing a product from the shopping cart when more products are in it # CartBasic.feature:133
     Given The "Firefox" is turned on                                                                      # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                              # _LoginCommonSteps.user_is_on_Home_Page()
     And User clicks Do koszyka button                                                                     # _CartCommonSteps.user_clicks_the_Do_koszyka_button()
@@ -318,9 +315,9 @@ Feature: Shopping Cart (Basic)
     Then Quantity one of the products in the cart is correct                                              # _CartCommonSteps.quantity_one_of_the_products_in_the_cart_is_correct()
     And Browser can be turned off                                                                         # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-9) Products added to the shopping cart staying in the shopping cart after login # CartBasic.feature:136
-    Description: When user has products in the shopping cart when they are signed out they should
-    appear in the shopping cart after login (when user had nothing in the shopping cart on his/her account).
+  Scenario Outline: (ID: Cart-B-9) Products added to the shopping cart staying in the shopping cart after login # CartBasic.feature:135
+    Description: When user has products in the shopping cart when he/she is signed out these products should
+    appear in the shopping cart after login (when user had nothing in the shopping cart on his/her account before).
 
     Given The "<browser>" is turned on
     And User is on Home Page
@@ -337,9 +334,9 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-9) Products added to the shopping cart staying in the shopping cart after login # CartBasic.feature:153
-    Description: When user has products in the shopping cart when they are signed out they should
-    appear in the shopping cart after login (when user had nothing in the shopping cart on his/her account).
+  Scenario Outline: (ID: Cart-B-9) Products added to the shopping cart staying in the shopping cart after login # CartBasic.feature:152
+    Description: When user has products in the shopping cart when he/she is signed out these products should
+    appear in the shopping cart after login (when user had nothing in the shopping cart on his/her account before).
 
     Given The "Chrome" is turned on                                                                             # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                                    # _LoginCommonSteps.user_is_on_Home_Page()
@@ -354,9 +351,9 @@ Feature: Shopping Cart (Basic)
     And Quantity one in the input field is correct                                                              # _CartCommonSteps.quantity_one_in_the_input_field_is_correct()
     And Browser can be turned off                                                                               # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-9) Products added to the shopping cart staying in the shopping cart after login # CartBasic.feature:154
-    Description: When user has products in the shopping cart when they are signed out they should
-    appear in the shopping cart after login (when user had nothing in the shopping cart on his/her account).
+  Scenario Outline: (ID: Cart-B-9) Products added to the shopping cart staying in the shopping cart after login # CartBasic.feature:153
+    Description: When user has products in the shopping cart when he/she is signed out these products should
+    appear in the shopping cart after login (when user had nothing in the shopping cart on his/her account before).
 
     Given The "Firefox" is turned on                                                                            # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                                    # _LoginCommonSteps.user_is_on_Home_Page()
@@ -371,9 +368,9 @@ Feature: Shopping Cart (Basic)
     And Quantity one in the input field is correct                                                              # _CartCommonSteps.quantity_one_in_the_input_field_is_correct()
     And Browser can be turned off                                                                               # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-10) Products disappearing from the shopping cart after logout # CartBasic.feature:156
+  Scenario Outline: (ID: Cart-B-10) Products disappearing from the shopping cart after logout # CartBasic.feature:155
     Description: When user has products in the shopping cart
-    they shouldn't be displayed after logout when user isn't signed in.
+    these products shouldn't be displayed after logout when user isn't signed in.
 
     Given The "<browser>" is turned on
     And User is on Home Page
@@ -393,9 +390,9 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-10) Products disappearing from the shopping cart after logout # CartBasic.feature:176
+  Scenario Outline: (ID: Cart-B-10) Products disappearing from the shopping cart after logout # CartBasic.feature:175
     Description: When user has products in the shopping cart
-    they shouldn't be displayed after logout when user isn't signed in.
+    these products shouldn't be displayed after logout when user isn't signed in.
 
     Given The "Chrome" is turned on                                                           # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                  # _LoginCommonSteps.user_is_on_Home_Page()
@@ -413,9 +410,9 @@ Feature: Shopping Cart (Basic)
     And Information about empty cart is displayed                                             # CartProductDisappearsAfterLogoutSteps.information_about_empty_cart_is_displayed()
     And Browser can be turned off                                                             # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-10) Products disappearing from the shopping cart after logout # CartBasic.feature:177
+  Scenario Outline: (ID: Cart-B-10) Products disappearing from the shopping cart after logout # CartBasic.feature:176
     Description: When user has products in the shopping cart
-    they shouldn't be displayed after logout when user isn't signed in.
+    these products shouldn't be displayed after logout when user isn't signed in.
 
     Given The "Firefox" is turned on                                                          # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                  # _LoginCommonSteps.user_is_on_Home_Page()
@@ -433,9 +430,9 @@ Feature: Shopping Cart (Basic)
     And Information about empty cart is displayed                                             # CartProductDisappearsAfterLogoutSteps.information_about_empty_cart_is_displayed()
     And Browser can be turned off                                                             # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-11) Products reappearing in the shopping cart after login again # CartBasic.feature:179
+  Scenario Outline: (ID: Cart-B-11) Products reappearing in the shopping cart after login again # CartBasic.feature:178
     Description: When user has products in the shopping cart they should
-    be displayed after logout and login again when user is signed in.
+    be displayed after login again when user is signed in.
 
     Given The "<browser>" is turned on
     And User is on Home Page
@@ -460,9 +457,9 @@ Feature: Shopping Cart (Basic)
 
     Examples: 
 
-  Scenario Outline: (ID: Cart-B-11) Products reappearing in the shopping cart after login again # CartBasic.feature:204
+  Scenario Outline: (ID: Cart-B-11) Products reappearing in the shopping cart after login again # CartBasic.feature:203
     Description: When user has products in the shopping cart they should
-    be displayed after logout and login again when user is signed in.
+    be displayed after login again when user is signed in.
 
     Given The "Chrome" is turned on                                                             # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                    # _LoginCommonSteps.user_is_on_Home_Page()
@@ -485,9 +482,9 @@ Feature: Shopping Cart (Basic)
     And Quantity one in the input field is correct                                              # _CartCommonSteps.quantity_one_in_the_input_field_is_correct()
     And Browser can be turned off                                                               # _LoginCommonSteps.browser_is_turned_off()
 
-  Scenario Outline: (ID: Cart-B-11) Products reappearing in the shopping cart after login again # CartBasic.feature:205
+  Scenario Outline: (ID: Cart-B-11) Products reappearing in the shopping cart after login again # CartBasic.feature:204
     Description: When user has products in the shopping cart they should
-    be displayed after logout and login again when user is signed in.
+    be displayed after login again when user is signed in.
 
     Given The "Firefox" is turned on                                                            # _LoginCommonSteps.classSetup(String)
     And User is on Home Page                                                                    # _LoginCommonSteps.user_is_on_Home_Page()

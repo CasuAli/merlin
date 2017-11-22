@@ -1,6 +1,8 @@
 package cartStepDefinition;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -12,7 +14,6 @@ public class CartShowingProductInfoSteps {
 
 	String productName;
 	String productAuthor;
-	String productTime;
 	String productUrl;
 	String productPrice;
 	
@@ -24,7 +25,6 @@ public class CartShowingProductInfoSteps {
 		_LoginCommonSteps.driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		productName = _LoginCommonSteps.driver.findElement(By.id("product-name")).getText();;
 		productAuthor = _LoginCommonSteps.driver.findElement(By.xpath("//span[@class='product-brand l-product-right-p_bran product-page__product-brand']")).getText();
-		productTime = _LoginCommonSteps.driver.findElement(By.xpath("//div[@class='product-page__totals']/div/p[@class='info-tag'][1]")).getText();
 		productUrl = _LoginCommonSteps.driver.getCurrentUrl();
 		productPrice = _LoginCommonSteps.driver.findElement(By.id("product-price")).getText() + " z³";
 	}
@@ -38,11 +38,6 @@ public class CartShowingProductInfoSteps {
 	@Then("^Information about product's author is displayed$")
 	public void information_about_product_s_author_is_displayed() throws Throwable {
 		assertEquals("Author of a product in the cart wasn't correct", productAuthor, _LoginCommonSteps.driver.findElement(By.xpath("//div[@class='txt_title-holder']/h4[1]")).getText());
-	}
-
-	@Then("^Information about product's sending time is displayed$")
-	public void information_about_product_s_sending_time_is_displayed() throws Throwable {
-		assertEquals("Time of sending a product in the cart wasn't correct", productTime, _LoginCommonSteps.driver.findElement(By.xpath("//div[@class='txt_title-holder']/h4[2]")).getText());
 	}
 
 	@Then("^Information about product's price is displayed$")

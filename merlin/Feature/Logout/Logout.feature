@@ -32,7 +32,7 @@ Description: Testing Logout functionalities
      | Firefox |
        
   Scenario Outline: (ID: Logout-3) Still signed out when navigating to a previous page after successful logout
-  Description: User is signed in, browse a product's page and decides to sign out.
+  Description: User is signed in, browses a product's page and decides to sign out.
   After this user goes back to the previous site. User should still be signed out. 
     Given The "<browser>" is turned on
     And User is on Home Page

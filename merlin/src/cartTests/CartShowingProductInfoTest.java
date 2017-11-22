@@ -26,7 +26,6 @@ public class CartShowingProductInfoTest {
 	private String baseUrl; //address of our tested site
 	private String productName;
 	private String productAuthor;
-	private String productTime;
 	private String productUrl;
 	private String productPrice;
 		
@@ -66,7 +65,6 @@ public class CartShowingProductInfoTest {
 		//gets info about this product
 		productName = driver.findElement(By.id("product-name")).getText();;
 		productAuthor = driver.findElement(By.xpath("//span[@class='product-brand l-product-right-p_bran product-page__product-brand']")).getText();
-		productTime = driver.findElement(By.xpath("//div[@class='product-page__totals']/div/p[@class='info-tag'][1]")).getText();
 		productUrl = driver.getCurrentUrl();
 		productPrice = driver.findElement(By.id("product-price")).getText() + " z³";
 		
@@ -87,7 +85,6 @@ public class CartShowingProductInfoTest {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		assertEquals("Title of a product in the cart wasn't correct", productName,driver.findElement(By.className("title")).getText());
 		assertEquals("Author of a product in the cart wasn't correct", productAuthor,driver.findElement(By.xpath("//div[@class='txt_title-holder']/h4[1]")).getText());
-		assertEquals("Time of sending a product in the cart wasn't correct", productTime,driver.findElement(By.xpath("//div[@class='txt_title-holder']/h4[2]")).getText());
 		assertEquals("Link connected to an image of a product in the cart wasn't correct", productUrl,driver.findElement(By.xpath("//a[@class='img cart-item__image']")).getAttribute("href"));
 		assertEquals("Link connected to a title of a product in the cart wasn't correct", productUrl,driver.findElement(By.xpath("//a[@class='title']")).getAttribute("href"));
 		assertEquals("Price of a product in the cart wasn't correct", productPrice,driver.findElement(By.className("value")).getText());

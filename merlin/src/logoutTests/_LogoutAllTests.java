@@ -7,6 +7,6 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({ LogoutNewSessionTest.class, LogoutPreviousPageTest.class, LogoutSuccessTest.class,
 		LogoutWhenNotLoggedTest.class })
-public class _AllLogoutTests {
+public class _LogoutAllTests {
 
 }

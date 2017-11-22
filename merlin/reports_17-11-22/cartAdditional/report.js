@@ -151,56 +151,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3655254414,
+  "duration": 3651944508,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 6177060835,
+  "duration": 4831461158,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 190405296,
+  "duration": 179512875,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 5124799882,
+  "duration": 4607059870,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 15018652,
+  "duration": 13825151,
   "status": "passed"
 });
 formatter.match({
   "location": "CartCheckoutSteps.user_clicks_Przejdz_do_platnosci_button()"
 });
 formatter.result({
-  "duration": 1786031399,
+  "duration": 1769483400,
   "status": "passed"
 });
 formatter.match({
   "location": "CartCheckoutSteps.user_is_on_checkout_page()"
 });
 formatter.result({
-  "duration": 7923910,
+  "duration": 6907856,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 1371537962,
+  "duration": 918236588,
   "status": "passed"
 });
 formatter.scenario({
@@ -264,56 +264,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5750546737,
+  "duration": 5767789569,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4444240383,
+  "duration": 4383260447,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 246256287,
+  "duration": 249053214,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 4237340849,
+  "duration": 4031125941,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 3744469,
+  "duration": 4417328,
   "status": "passed"
 });
 formatter.match({
   "location": "CartCheckoutSteps.user_clicks_Przejdz_do_platnosci_button()"
 });
 formatter.result({
-  "duration": 2238109604,
+  "duration": 1846094711,
   "status": "passed"
 });
 formatter.match({
   "location": "CartCheckoutSteps.user_is_on_checkout_page()"
 });
 formatter.result({
-  "duration": 10335896,
+  "duration": 7926194,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 247028062,
+  "duration": 269600073,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -465,63 +465,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3081188926,
+  "duration": 3076920550,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 5111217925,
+  "duration": 6185026322,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 175304707,
+  "duration": 189392675,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 5396251000,
+  "duration": 4049799240,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 7130991,
+  "duration": 6816859,
   "status": "passed"
 });
 formatter.match({
   "location": "CartContinueShoppingSteps.user_clicks_Wroc_do_zakupow_hyperlink()"
 });
 formatter.result({
-  "duration": 2068139735,
+  "duration": 1765655478,
   "status": "passed"
 });
 formatter.match({
   "location": "CartContinueShoppingSteps.user_comes_back_to_Home_Page()"
 });
 formatter.result({
-  "duration": 60725937,
+  "duration": 71322147,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.quantity_one_of_the_products_in_the_cart_is_correct()"
 });
 formatter.result({
-  "duration": 51043255,
+  "duration": 40460891,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 919850931,
+  "duration": 1141198534,
   "status": "passed"
 });
 formatter.scenario({
@@ -590,63 +590,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5736860190,
+  "duration": 5743009643,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4128904185,
+  "duration": 4288014729,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 252621544,
+  "duration": 258258277,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 4189466629,
+  "duration": 3578826582,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 3368776,
+  "duration": 4008407,
   "status": "passed"
 });
 formatter.match({
   "location": "CartContinueShoppingSteps.user_clicks_Wroc_do_zakupow_hyperlink()"
 });
 formatter.result({
-  "duration": 3390397744,
+  "duration": 2334140477,
   "status": "passed"
 });
 formatter.match({
   "location": "CartContinueShoppingSteps.user_comes_back_to_Home_Page()"
 });
 formatter.result({
-  "duration": 5866472,
+  "duration": 2669502,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.quantity_one_of_the_products_in_the_cart_is_correct()"
 });
 formatter.result({
-  "duration": 23840449,
+  "duration": 53655859,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 247089607,
+  "duration": 254232501,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -798,63 +798,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3082345834,
+  "duration": 3084373256,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 5460847895,
+  "duration": 5031980030,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 179038226,
+  "duration": 179300674,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 4489833638,
+  "duration": 4229528091,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 8227863,
+  "duration": 9656650,
   "status": "passed"
 });
 formatter.match({
   "location": "CartPromoCodeSteps.user_clicks_Posiadasz_link_promocyjny_hyperlink()"
 });
 formatter.result({
-  "duration": 108593361,
+  "duration": 129421764,
   "status": "passed"
 });
 formatter.match({
   "location": "CartPromoCodeSteps.input_field_for_promo_code_is_enabled()"
 });
 formatter.result({
-  "duration": 38720152,
+  "duration": 34928188,
   "status": "passed"
 });
 formatter.match({
   "location": "CartPromoCodeSteps.ok_button_for_submitting_promo_code_is_enabled()"
 });
 formatter.result({
-  "duration": 37306490,
+  "duration": 30915628,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 818728006,
+  "duration": 821777700,
   "status": "passed"
 });
 formatter.scenario({
@@ -923,63 +923,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5736503754,
+  "duration": 5728336443,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4409529384,
+  "duration": 4375328213,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 246825301,
+  "duration": 248752281,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 3960694976,
+  "duration": 3833395509,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 3044811,
+  "duration": 4071085,
   "status": "passed"
 });
 formatter.match({
   "location": "CartPromoCodeSteps.user_clicks_Posiadasz_link_promocyjny_hyperlink()"
 });
 formatter.result({
-  "duration": 290132682,
+  "duration": 285402996,
   "status": "passed"
 });
 formatter.match({
   "location": "CartPromoCodeSteps.input_field_for_promo_code_is_enabled()"
 });
 formatter.result({
-  "duration": 10441996,
+  "duration": 16780483,
   "status": "passed"
 });
 formatter.match({
   "location": "CartPromoCodeSteps.ok_button_for_submitting_promo_code_is_enabled()"
 });
 formatter.result({
-  "duration": 10950597,
+  "duration": 17133899,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 257483273,
+  "duration": 258636613,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1121,56 +1121,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3090669225,
+  "duration": 3094719370,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 5517875806,
+  "duration": 4792812658,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 184097431,
+  "duration": 174419298,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 4190555572,
+  "duration": 4986375722,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 10014952,
+  "duration": 6882180,
   "status": "passed"
 });
 formatter.match({
   "location": "CartSendingDateSteps.notice_is_displayed()"
 });
 formatter.result({
-  "duration": 50453474,
+  "duration": 41253813,
   "status": "passed"
 });
 formatter.match({
   "location": "CartSendingDateSteps.information_about_sending_date_of_products_is_displayed()"
 });
 formatter.result({
-  "duration": 18325127,
+  "duration": 18414655,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 803382368,
+  "duration": 830848343,
   "status": "passed"
 });
 formatter.scenario({
@@ -1234,56 +1234,56 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5721215131,
+  "duration": 5742944321,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4905634260,
+  "duration": 4689560698,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 262415611,
+  "duration": 244392724,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 5493652112,
+  "duration": 4036781736,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 3663666,
+  "duration": 4562319,
   "status": "passed"
 });
 formatter.match({
   "location": "CartSendingDateSteps.notice_is_displayed()"
 });
 formatter.result({
-  "duration": 33568440,
+  "duration": 29570304,
   "status": "passed"
 });
 formatter.match({
   "location": "CartSendingDateSteps.information_about_sending_date_of_products_is_displayed()"
 });
 formatter.result({
-  "duration": 15012611,
+  "duration": 18001204,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 238335397,
+  "duration": 229630415,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1455,77 +1455,77 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3081145505,
+  "duration": 3064578162,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 6038872318,
+  "duration": 4670011788,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 180258568,
+  "duration": 173675085,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 5894848288,
+  "duration": 4001381949,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 8856535,
+  "duration": 7018865,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.dodaj_do_schowka_hyperlink_is_enabled()"
 });
 formatter.result({
-  "duration": 2076215432,
+  "duration": 2083567874,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.user_clicks_Dodaj_do_schowka_hyperlink()"
 });
 formatter.result({
-  "duration": 56901798,
+  "duration": 61572612,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.produkt_zostal_dodany_do_schowka_hyperlink_is_displayed()"
 });
 formatter.result({
-  "duration": 639966546,
+  "duration": 441229043,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.user_clicks_Produkt_zostal_dodany_do_schowka_hyperlink()"
 });
 formatter.result({
-  "duration": 37700684,
+  "duration": 37676604,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.dodaj_do_schowka_hyperlink_is_enabled()"
 });
 formatter.result({
-  "duration": 2057484784,
+  "duration": 2046479920,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 869475239,
+  "duration": 812138796,
   "status": "passed"
 });
 formatter.scenario({
@@ -1604,77 +1604,77 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5758949419,
+  "duration": 5716713348,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4865557838,
+  "duration": 4711381896,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_clicks_the_Do_koszyka_button()"
 });
 formatter.result({
-  "duration": 244606259,
+  "duration": 251880546,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 4054117518,
+  "duration": 3962531066,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 2965519,
+  "duration": 3026316,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.dodaj_do_schowka_hyperlink_is_enabled()"
 });
 formatter.result({
-  "duration": 2031084714,
+  "duration": 2036019021,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.user_clicks_Dodaj_do_schowka_hyperlink()"
 });
 formatter.result({
-  "duration": 26526936,
+  "duration": 32936445,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.produkt_zostal_dodany_do_schowka_hyperlink_is_displayed()"
 });
 formatter.result({
-  "duration": 458324523,
+  "duration": 789946436,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.user_clicks_Produkt_zostal_dodany_do_schowka_hyperlink()"
 });
 formatter.result({
-  "duration": 229854556,
+  "duration": 245804502,
   "status": "passed"
 });
 formatter.match({
   "location": "CartBookmarkSteps.dodaj_do_schowka_hyperlink_is_enabled()"
 });
 formatter.result({
-  "duration": 2041066817,
+  "duration": 2039236771,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 250331139,
+  "duration": 235735155,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1826,63 +1826,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3075005664,
+  "duration": 3086514144,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 5369801468,
+  "duration": 4680865372,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()"
 });
 formatter.result({
-  "duration": 3103585130,
+  "duration": 3126006160,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()"
 });
 formatter.result({
-  "duration": 122863648,
+  "duration": 127934847,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 3848508179,
+  "duration": 3692068973,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 10819577,
+  "duration": 6605035,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductSiteTitleDirectingSteps.user_clicks_on_a_product_s_title()"
 });
 formatter.result({
-  "duration": 3084822764,
+  "duration": 1683841093,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductSiteTitleDirectingSteps.user_is_directed_to_a_product_s_page()"
 });
 formatter.result({
-  "duration": 7880865,
+  "duration": 5286143,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 865662050,
+  "duration": 861872337,
   "status": "passed"
 });
 formatter.scenario({
@@ -1951,63 +1951,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5729598934,
+  "duration": 5722780707,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4709710245,
+  "duration": 4846025614,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()"
 });
 formatter.result({
-  "duration": 2339166830,
+  "duration": 2548728796,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()"
 });
 formatter.result({
-  "duration": 243728006,
+  "duration": 253251544,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 3859649454,
+  "duration": 3676141070,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 3116929,
+  "duration": 2859803,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductSiteTitleDirectingSteps.user_clicks_on_a_product_s_title()"
 });
 formatter.result({
-  "duration": 1878345743,
+  "duration": 2276422218,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductSiteTitleDirectingSteps.user_is_directed_to_a_product_s_page()"
 });
 formatter.result({
-  "duration": 3201507,
+  "duration": 3374070,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 264984293,
+  "duration": 275532635,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2159,63 +2159,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 3070651402,
+  "duration": 3076152172,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 5580003323,
+  "duration": 4815868169,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()"
 });
 formatter.result({
-  "duration": 2578594191,
+  "duration": 2593566991,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()"
 });
 formatter.result({
-  "duration": 116188776,
+  "duration": 133650301,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 4174800260,
+  "duration": 4023665306,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 4863617,
+  "duration": 6441920,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductSiteImageDirectingSteps.user_clicks_on_a_product_s_title()"
 });
 formatter.result({
-  "duration": 1932197066,
+  "duration": 1770785680,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductSiteTitleDirectingSteps.user_is_directed_to_a_product_s_page()"
 });
 formatter.result({
-  "duration": 4842851,
+  "duration": 8921121,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 869912477,
+  "duration": 860108275,
   "status": "passed"
 });
 formatter.scenario({
@@ -2284,63 +2284,63 @@ formatter.match({
   "location": "_LoginCommonSteps.classSetup(String)"
 });
 formatter.result({
-  "duration": 5702268127,
+  "duration": 5780457055,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 4452664587,
+  "duration": 4246549470,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductAddingFromPageSteps.user_goes_to_a_product_s_page()"
 });
 formatter.result({
-  "duration": 2335599447,
+  "duration": 2151683221,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductAddingFromPageSteps.user_clicks_Do_koszyka_button_on_this_page()"
 });
 formatter.result({
-  "duration": 250757050,
+  "duration": 247049766,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.user_click_the_Przejdz_do_koszyka_button()"
 });
 formatter.result({
-  "duration": 4047623884,
+  "duration": 3824672996,
   "status": "passed"
 });
 formatter.match({
   "location": "_CartCommonSteps.shopping_cart_page_is_opened()"
 });
 formatter.result({
-  "duration": 2799384,
+  "duration": 3015367,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductSiteImageDirectingSteps.user_clicks_on_a_product_s_title()"
 });
 formatter.result({
-  "duration": 2338498134,
+  "duration": 1999526890,
   "status": "passed"
 });
 formatter.match({
   "location": "CartProductSiteTitleDirectingSteps.user_is_directed_to_a_product_s_page()"
 });
 formatter.result({
-  "duration": 4666143,
+  "duration": 3736926,
   "status": "passed"
 });
 formatter.match({
   "location": "_LoginCommonSteps.browser_is_turned_off()"
 });
 formatter.result({
-  "duration": 268361752,
+  "duration": 274808434,
   "status": "passed"
 });
 });

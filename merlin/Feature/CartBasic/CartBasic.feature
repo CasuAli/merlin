@@ -26,7 +26,6 @@ Description: Testing basic shopping cart functionalities
     Then Shopping cart page is opened
     And Information about product's title is displayed
     And Information about product's author is displayed
-    And Information about product's sending time is displayed
     And Information about product's price is displayed
     And Product's title is linked to its page
     And Product's image is linked to its page
@@ -134,8 +133,8 @@ Description: Testing basic shopping cart functionalities
      | Firefox |
   
   Scenario Outline: (ID: Cart-B-9) Products added to the shopping cart staying in the shopping cart after login
-  Description: When user has products in the shopping cart when they are signed out they should
-  appear in the shopping cart after login (when user had nothing in the shopping cart on his/her account). 
+  Description: When user has products in the shopping cart when he/she is signed out these products should
+  appear in the shopping cart after login (when user had nothing in the shopping cart on his/her account before). 
     Given The "<browser>" is turned on
     And User is on Home Page
     And User clicks Do koszyka button
@@ -155,7 +154,7 @@ Description: Testing basic shopping cart functionalities
           
   Scenario Outline: (ID: Cart-B-10) Products disappearing from the shopping cart after logout
   Description: When user has products in the shopping cart
-  they shouldn't be displayed after logout when user isn't signed in.
+  these products shouldn't be displayed after logout when user isn't signed in.
     Given The "<browser>" is turned on
     And User is on Home Page
     #login
@@ -178,7 +177,7 @@ Description: Testing basic shopping cart functionalities
      
   Scenario Outline: (ID: Cart-B-11) Products reappearing in the shopping cart after login again
   Description: When user has products in the shopping cart they should
-  be displayed after logout and login again when user is signed in. 
+  be displayed after login again when user is signed in. 
     Given The "<browser>" is turned on
     And User is on Home Page
     #login
